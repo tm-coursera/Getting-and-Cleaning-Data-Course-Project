@@ -27,95 +27,91 @@ Variables :
                         5 : STANDING
                         6 : LAYING
 
-All of the following variables are of the class numeric  and are the mean of the descriptive meaning of the variable
 
- [3] "tBodyAcc.mean...X_mean_"                   
- [4] "tBodyAcc.mean...Y_mean_"                   
- [5] "tBodyAcc.mean...Z_mean_"                   
- [6] "tBodyAcc.std...X_mean_"                    
- [7] "tBodyAcc.std...Y_mean_"                    
- [8] "tBodyAcc.std...Z_mean_"                    
- [9] "tGravityAcc.mean...X_mean_"                
-[10] "tGravityAcc.mean...Y_mean_"                
-[11] "tGravityAcc.mean...Z_mean_"                
-[12] "tGravityAcc.std...X_mean_"                 
-[13] "tGravityAcc.std...Y_mean_"                 
-[14] "tGravityAcc.std...Z_mean_"                 
-[15] "tBodyAccJerk.mean...X_mean_"               
-[16] "tBodyAccJerk.mean...Y_mean_"               
-[17] "tBodyAccJerk.mean...Z_mean_"               
-[18] "tBodyAccJerk.std...X_mean_"                
-[19] "tBodyAccJerk.std...Y_mean_"                
-[20] "tBodyAccJerk.std...Z_mean_"                
-[21] "tBodyGyro.mean...X_mean_"                  
-[22] "tBodyGyro.mean...Y_mean_"                  
-[23] "tBodyGyro.mean...Z_mean_"                  
-[24] "tBodyGyro.std...X_mean_"                   
-[25] "tBodyGyro.std...Y_mean_"                   
-[26] "tBodyGyro.std...Z_mean_"                   
-[27] "tBodyGyroJerk.mean...X_mean_"              
-[28] "tBodyGyroJerk.mean...Y_mean_"              
-[29] "tBodyGyroJerk.mean...Z_mean_"              
-[30] "tBodyGyroJerk.std...X_mean_"               
-[31] "tBodyGyroJerk.std...Y_mean_"               
-[32] "tBodyGyroJerk.std...Z_mean_"               
-[33] "tBodyAccMag.mean.._mean_"                  
-[34] "tBodyAccMag.std.._mean_"                   
-[35] "tGravityAccMag.mean.._mean_"               
-[36] "tGravityAccMag.std.._mean_"                
-[37] "tBodyAccJerkMag.mean.._mean_"              
-[38] "tBodyAccJerkMag.std.._mean_"               
-[39] "tBodyGyroMag.mean.._mean_"                 
-[40] "tBodyGyroMag.std.._mean_"                  
-[41] "tBodyGyroJerkMag.mean.._mean_"             
-[42] "tBodyGyroJerkMag.std.._mean_"              
-[43] "fBodyAcc.mean...X_mean_"                   
-[44] "fBodyAcc.mean...Y_mean_"                   
-[45] "fBodyAcc.mean...Z_mean_"                   
-[46] "fBodyAcc.std...X_mean_"                    
-[47] "fBodyAcc.std...Y_mean_"                    
-[48] "fBodyAcc.std...Z_mean_"                    
-[49] "fBodyAcc.meanFreq...X_mean_"               
-[50] "fBodyAcc.meanFreq...Y_mean_"               
-[51] "fBodyAcc.meanFreq...Z_mean_"               
-[52] "fBodyAccJerk.mean...X_mean_"               
-[53] "fBodyAccJerk.mean...Y_mean_"               
-[54] "fBodyAccJerk.mean...Z_mean_"               
-[55] "fBodyAccJerk.std...X_mean_"                
-[56] "fBodyAccJerk.std...Y_mean_"                
-[57] "fBodyAccJerk.std...Z_mean_"                
-[58] "fBodyAccJerk.meanFreq...X_mean_"           
-[59] "fBodyAccJerk.meanFreq...Y_mean_"           
-[60] "fBodyAccJerk.meanFreq...Z_mean_"           
-[61] "fBodyGyro.mean...X_mean_"                  
-[62] "fBodyGyro.mean...Y_mean_"                  
-[63] "fBodyGyro.mean...Z_mean_"                  
-[64] "fBodyGyro.std...X_mean_"                   
-[65] "fBodyGyro.std...Y_mean_"                   
-[66] "fBodyGyro.std...Z_mean_"                   
-[67] "fBodyGyro.meanFreq...X_mean_"              
-[68] "fBodyGyro.meanFreq...Y_mean_"              
-[69] "fBodyGyro.meanFreq...Z_mean_"              
-[70] "fBodyAccMag.mean.._mean_"                  
-[71] "fBodyAccMag.std.._mean_"                   
-[72] "fBodyAccMag.meanFreq.._mean_"              
-[73] "fBodyBodyAccJerkMag.mean.._mean_"          
-[74] "fBodyBodyAccJerkMag.std.._mean_"           
-[75] "fBodyBodyAccJerkMag.meanFreq.._mean_"      
-[76] "fBodyBodyGyroMag.mean.._mean_"             
-[77] "fBodyBodyGyroMag.std.._mean_"              
-[78] "fBodyBodyGyroMag.meanFreq.._mean_"         
-[79] "fBodyBodyGyroJerkMag.mean.._mean_"         
-[80] "fBodyBodyGyroJerkMag.std.._mean_"          
-[81] "fBodyBodyGyroJerkMag.meanFreq.._mean_"     
-[82] "angle.tBodyAccMean.gravity._mean_"         
-[83] "angle.tBodyAccJerkMean..gravityMean._mean_"
-[84] "angle.tBodyGyroMean.gravityMean._mean_"    
-[85] "angle.tBodyGyroJerkMean.gravityMean._mean_"
-[86] "angle.X.gravityMean._mean_"                
-[87] "angle.Y.gravityMean._mean_"                
-[88] "angle.Z.gravityMean._mean_"     
+All of the following variable names are close to the original feature names but have "(", ")", "," and "-" replaced
+All of the following variables are of the class numeric 
+All of the following variables have "_mean_" at the end of the variable name. The part of the variable name before "_mean_" refers to the original variable.
+All of the following variables with "_mean_" at the end are the average of the all recordings for an activity of a subject for the feature as specified by the variable name.
 
+ [3] tBodyAcc_mean_X_mean_              
+ [4] tBodyAcc_mean_Y_mean_              
+ [5] tBodyAcc_mean_Z_mean_              
+ [6] tBodyAcc_std_X_mean_               
+ [7] tBodyAcc_std_Y_mean_               
+ [8] tBodyAcc_std_Z_mean_               
+ [9] tGravityAcc_mean_X_mean_           
+[10] tGravityAcc_mean_Y_mean_           
+[11] tGravityAcc_mean_Z_mean_           
+[12] tGravityAcc_std_X_mean_            
+[13] tGravityAcc_std_Y_mean_            
+[14] tGravityAcc_std_Z_mean_            
+[15] tBodyAccJerk_mean_X_mean_          
+[16] tBodyAccJerk_mean_Y_mean_          
+[17] tBodyAccJerk_mean_Z_mean_          
+[18] tBodyAccJerk_std_X_mean_           
+[19] tBodyAccJerk_std_Y_mean_           
+[20] tBodyAccJerk_std_Z_mean_           
+[21] tBodyGyro_mean_X_mean_             
+[22] tBodyGyro_mean_Y_mean_             
+[23] tBodyGyro_mean_Z_mean_             
+[24] tBodyGyro_std_X_mean_              
+[25] tBodyGyro_std_Y_mean_              
+[26] tBodyGyro_std_Z_mean_              
+[27] tBodyGyroJerk_mean_X_mean_         
+[28] tBodyGyroJerk_mean_Y_mean_         
+[29] tBodyGyroJerk_mean_Z_mean_         
+[30] tBodyGyroJerk_std_X_mean_          
+[31] tBodyGyroJerk_std_Y_mean_          
+[32] tBodyGyroJerk_std_Z_mean_          
+[33] tBodyAccMag_mean_mean_             
+[34] tBodyAccMag_std_mean_              
+[35] tGravityAccMag_mean_mean_          
+[36] tGravityAccMag_std_mean_           
+[37] tBodyAccJerkMag_mean_mean_         
+[38] tBodyAccJerkMag_std_mean_          
+[39] tBodyGyroMag_mean_mean_            
+[40] tBodyGyroMag_std_mean_             
+[41] tBodyGyroJerkMag_mean_mean_        
+[42] tBodyGyroJerkMag_std_mean_         
+[43] fBodyAcc_mean_X_mean_              
+[44] fBodyAcc_mean_Y_mean_              
+[45] fBodyAcc_mean_Z_mean_              
+[46] fBodyAcc_std_X_mean_               
+[47] fBodyAcc_std_Y_mean_               
+[48] fBodyAcc_std_Z_mean_               
+[49] fBodyAcc_meanFreq_X_mean_          
+[50] fBodyAcc_meanFreq_Y_mean_          
+[51] fBodyAcc_meanFreq_Z_mean_          
+[52] fBodyAccJerk_mean_X_mean_          
+[53] fBodyAccJerk_mean_Y_mean_          
+[54] fBodyAccJerk_mean_Z_mean_          
+[55] fBodyAccJerk_std_X_mean_           
+[56] fBodyAccJerk_std_Y_mean_           
+[57] fBodyAccJerk_std_Z_mean_           
+[58] fBodyAccJerk_meanFreq_X_mean_      
+[59] fBodyAccJerk_meanFreq_Y_mean_      
+[60] fBodyAccJerk_meanFreq_Z_mean_      
+[61] fBodyGyro_mean_X_mean_             
+[62] fBodyGyro_mean_Y_mean_             
+[63] fBodyGyro_mean_Z_mean_             
+[64] fBodyGyro_std_X_mean_              
+[65] fBodyGyro_std_Y_mean_              
+[66] fBodyGyro_std_Z_mean_              
+[67] fBodyGyro_meanFreq_X_mean_         
+[68] fBodyGyro_meanFreq_Y_mean_         
+[69] fBodyGyro_meanFreq_Z_mean_         
+[70] fBodyAccMag_mean_mean_             
+[71] fBodyAccMag_std_mean_              
+[72] fBodyAccMag_meanFreq_mean_         
+[73] fBodyBodyAccJerkMag_mean_mean_     
+[74] fBodyBodyAccJerkMag_std_mean_      
+[75] fBodyBodyAccJerkMag_meanFreq_mean_ 
+[76] fBodyBodyGyroMag_mean_mean_        
+[77] fBodyBodyGyroMag_std_mean_         
+[78] fBodyBodyGyroMag_meanFreq_mean_    
+[79] fBodyBodyGyroJerkMag_mean_mean_    
+[80] fBodyBodyGyroJerkMag_std_mean_     
+[81] fBodyBodyGyroJerkMag_meanFreq_mean_
 
 
 
